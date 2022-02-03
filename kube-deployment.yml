@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: dockersamples/k8s-wordsmith-db
+        image: zada04/words-db 
         ports:
         - containerPort: 5432
           name: db
@@ -68,7 +68,7 @@ spec:
     spec:
       containers:
       - name: words
-        image: dockersamples/k8s-wordsmith-api
+        image: zada04/words-app
         ports:
         - containerPort: 8080
           name: api
@@ -105,7 +105,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: dockersamples/k8s-wordsmith-web
+        image: zada04/words-web
         ports:
         - containerPort: 80
           name: words-web

@@ -4,16 +4,16 @@ services:
 
   db:
     build: db
-    image: dockersamples/k8s-wordsmith-db
+    image: zada04/words-db
 
   words:
     build: words
-    image: dockersamples/k8s-wordsmith-api
+    image: zada04/words-app
     deploy:
       replicas: 5
 
   web:
     build: web
-    image: dockersamples/k8s-wordsmith-web
+    image: zada04/words-web
     ports:
      - "8080:80"
