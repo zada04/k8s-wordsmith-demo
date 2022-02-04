@@ -5,6 +5,7 @@ pipeline {
         DOCKER_IMAGE_WEB = "zada04/words-web"
         DOCKER_IMAGE_APP = "zada04/words-app" 
     }
+    stages('stages'){
           stage('Build Docker Image') {
             when {
                 branch 'master'
@@ -46,4 +47,4 @@ pipeline {
             }
         }
     }
-
+}
