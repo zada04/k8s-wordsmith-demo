@@ -1,4 +1,4 @@
-pipipeline {
+pipeline {
     agent any
     environment {
         DOCKER_IMAGE_DB = "zada04/words-db"
